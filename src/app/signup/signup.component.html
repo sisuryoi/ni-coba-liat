@@ -1,0 +1,43 @@
+<!--this is comment-->
+<img class="img" src="/assets/LogBG.jpg">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Sign Up</h1>
+                    <h6>Mohon Daftarkan diri anda</h6>
+                </div>
+                <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Nama Lengkap</label>
+                        <input formControlName="name" type="text" class="form-control" id="exampleInputPassword1"
+                            placeholder="Nama Lengkap">
+                        <span class="text-danger"
+                            *ngIf="signupForm.controls['fullname'].dirty && signupForm.hasError('required','fullname')">*Nama
+                            lengkap harus diisi</span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Nomor telepon</label>
+                        <input formControlName="mobile" type="number" class="form-control" id="exampleInputPassword1"
+                            placeholder="contoh. 0898...">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Alamat Email</label>
+                        <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Email">
+                        <div id="emailHelp" class="form-text">Kami tidak akan menyebarluaskan email anda kepada
+                            siapapun!.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Kata Sandi</label>
+                        <input formControlName="password" type="password" class="form-control"
+                            id="exampleInputPassword1" placeholder="Kata sandi">
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">Daftar</button>
+                </form>
+                <a style="color: #fff; margin-top: 10px;" routerLink="/login">Sudah punya akun? klik untuk Login!</a>
+            </div>
+        </div>
+    </div>
+</div>

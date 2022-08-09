@@ -1,0 +1,25 @@
+.card {
+    border: 100%;
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: hsla(205, 46%, 30%, 1);
+    background: linear-gradient(90deg, rgba(35, 20, 91, 0.877) 0%, rgb(59, 22, 139) 100%);
+}
+
+.card h1,
+h6 {
+    color: #fff;
+}
+
+label {
+    color: #fff;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}

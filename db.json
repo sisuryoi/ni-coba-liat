@@ -1,0 +1,108 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "firstName": "wwqe",
+      "lastName": "qwdeqw",
+      "email": "sadas@sadas",
+      "mobile": "1212",
+      "salary": "123123"
+    }
+  ],
+  "signupUsers": [
+    {
+      "fullname": "asdas",
+      "email": "hdsakdk@hjsdkfa",
+      "password": "sadasdsadasdasdsa",
+      "mobile": 213123,
+      "id": 1
+    },
+    {
+      "fullname": "jauhar",
+      "email": "jauhar@jjj",
+      "password": "jjjjjj",
+      "mobile": 1222,
+      "id": 2
+    },
+    {
+      "fullname": "asadasdddd",
+      "email": "jauhar@gmail.com",
+      "password": "jhrhbbs12345",
+      "mobile": 189289812818,
+      "id": 3
+    },
+    {
+      "fullname": "aaa",
+      "email": "sdsa@dsadsad",
+      "password": "12233213213",
+      "mobile": 12312,
+      "id": 4
+    },
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "mobile": "",
+      "id": 5
+    },
+    {
+      "fullname": "aaaaaa",
+      "email": "asdfgh@gmail.com",
+      "password": "123456",
+      "mobile": 123456,
+      "id": 6
+    },
+    {
+      "fullname": "dadadadad",
+      "email": "asdasd@sadasda",
+      "password": "123123123",
+      "mobile": 1221334424,
+      "id": 7
+    },
+    {
+      "fullname": "test",
+      "email": "test@test",
+      "password": "12345",
+      "mobile": 12345,
+      "id": 8
+    },
+    {
+      "fullname": "test",
+      "email": "test@test1",
+      "password": "123",
+      "mobile": 123,
+      "id": 9
+    },
+    {
+      "fullname": "haidek",
+      "email": "haidekk@dekdek",
+      "password": "123",
+      "mobile": 123,
+      "id": 10
+    },
+    {
+      "fullname": "ahmad",
+      "email": "ahmad",
+      "password": "123",
+      "mobile": 123,
+      "id": 11
+    },
+    {
+      "fullname": "",
+      "email": "123123",
+      "password": "123213",
+      "mobile": 1231,
+      "id": 12
+    },
+    {
+      "name": "2131",
+      "email": "",
+      "password": "",
+      "mobile": "",
+      "id": 13
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

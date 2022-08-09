@@ -1,0 +1,115 @@
+<mat-toolbar>
+    <div class="bg-img">
+    </div>
+    <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+        <mat-icon *ngIf="!sidenav.opened">
+            menu
+        </mat-icon>
+        <mat-icon *ngIf="sidenav.opened">
+            close
+        </mat-icon>
+    </button>
+    Home
+
+</mat-toolbar>
+
+
+<mat-sidenav-container style="background-color: rgb(4, 0, 65);">
+    <mat-sidenav #sidenav="matSidenav">
+
+        <img class="avatar mat-elevation-z8" src="">
+        <!-- ini session -->
+        <!-- <h4 class="name">{{ userLogged() }}</h4>
+        <p class="designation">{{ emailLogged() }}</p> -->
+
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button" routerLink="/home" onclick="sudah()">
+            <mat-icon>home</mat-icon>
+            <span>Home</span>
+        </button>
+        <script>
+            function sudah() {
+                alert("Anda sudah berada di halaman ini!");
+            } 
+        </script>
+        <button mat-button class="menu-button">
+            <mat-icon>person</mat-icon>
+            <span>Profile</span>
+        </button>
+        <button mat-button class="menu-button" routerLink="/devices">
+            <mat-icon>videocam</mat-icon>
+            <span>Device</span>
+        </button>
+
+        <mat-divider></mat-divider>
+
+        <button routerLink="/login" mat-button class="menu-button">
+            <mat-icon>directions_run</mat-icon>
+            <span>Logout</span>
+        </button>
+    </mat-sidenav>
+
+    <img class="img" src="/assets/LogBG.jpg">
+
+
+    <mat-sidenav-content style="color:blue">
+
+        <div style="color: rgb(95, 155, 201);">
+            <mat-grid-list cols="4" style="color: black;">
+                <br>
+                <br>
+                <br>
+                <mat-grid-tile>
+                    <div class="container">
+                        <img src="/assets/ruang-tamu.jpg" alt="Avatar" class="image" style="width:100%">
+                        <div class=" middle">
+                            <button mat-button class="menu-button-content" routerLink="/home">Ruang Tamu</button>
+
+                        </div>
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div class="container">
+                        <img src="/assets/ruang-tamu.jpg" alt="Avatar" class="image" style="width:100%">
+                        <div class=" middle">
+                            <button mat-button class="menu-button-content" routerLink="/home">Ruang Tamu</button>
+
+                        </div>
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div class="container">
+                        <img src="/assets/ruang-tamu.jpg" alt="Avatar" class="image" style="width:100%">
+                        <div class=" middle">
+                            <button mat-button class="menu-button-content" routerLink="/home">Ruang Tamu</button>
+
+                        </div>
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div class="container">
+                        <img src="/assets/ruang-tamu.jpg" alt="Avatar" class="image" style="width:100%">
+                        <div class=" middle">
+                            <button mat-button class="menu-button-content" routerLink="/home">Ruang Tamu</button>
+
+                        </div>
+                    </div>
+                </mat-grid-tile>
+            </mat-grid-list>
+
+            <mat-grid-list cols="4">
+                <br>
+                <br>
+                <br>
+                <mat-grid-tile>1</mat-grid-tile>
+                <mat-grid-tile>2</mat-grid-tile>
+                <mat-grid-tile>3</mat-grid-tile>
+                <mat-grid-tile>4</mat-grid-tile>
+            </mat-grid-list>
+            <br>
+            <br>
+            <br>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,49 @@
+<mat-toolbar>
+    <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+        <mat-icon *ngIf="!sidenav.opened">
+            menu
+        </mat-icon>
+        <mat-icon *ngIf="sidenav.opened">
+            close
+        </mat-icon>
+    </button>
+    Devices
+
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav">
+
+        <img class="avatar mat-elevation-z8" src="">
+
+        <h4 class="name">Users</h4>
+        <p class="designation">Identity</p>
+
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button" routerLink="/home">
+            <mat-icon>home</mat-icon>
+            <span>Home</span>
+        </button>
+        <button mat-button class="menu-button">
+            <mat-icon>person</mat-icon>
+            <span>Profile</span>
+        </button>
+        <button mat-button class="menu-button" routerLink="/devices">
+            <mat-icon>videocam</mat-icon>
+            <span>Device</span>
+        </button>
+
+        <mat-divider></mat-divider>
+
+        <button routerLink="/login" mat-button class="menu-button">
+            <mat-icon>directions_run</mat-icon>
+            <span>Logout</span>
+        </button>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="content mat-elevation-z24">
+            Main Content
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

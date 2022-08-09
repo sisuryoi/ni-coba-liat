@@ -1,0 +1,56 @@
+<img class="img" src="/assets/LogBG.jpg">
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="text-center">
+                        <h1>LOGIN</h1>
+                        <h4>Mohon masukkan Email dan Password</h4>
+                    </div>
+                    <form [formGroup]="loginForm" (ngSubmit)="login()">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Alamat Email</label>
+                            <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Email anda">
+                            <small id="emailHelp" class="form-text">Kami tidak menyebarluaskan alamat email anda
+                                kepada
+                                siapapun.</small><br>
+                            <span class="text-danger"
+                                *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email')">*Email
+                                tidak boleh kosong</span>
+                        </div>
+
+                        <!-- [type]="hide?'password':'text'" -->
+
+                        <div class="row mb-3">
+
+
+                            < <!-- yang work -->
+                                <label for="exampleInputPassword1" class="form-label">Kata Sandi</label>
+                                <div class="col-10">
+                                    <input formControlName="password" [type]="typepass" id="exampleInputPassword1"
+                                        class="form-control" placeholder="Kata Sandi">
+                                </div>
+                                <div class="col-1">
+                                    <mat-icon (click)="showpassword()">{{icon}}</mat-icon>
+                                </div>
+                                <!-- work smpe sini -->
+
+
+                                <!-- <i class="material-icons" matSuffix (click)="hide=!hide">
+                            {{hide? 'visibility'; 'visibility_off'}}
+                        </i> -->
+                                <span class="text-danger"
+                                    *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">*Password
+                                    Is Required</span>
+                        </div>
+                        <button type="submit" [disabled]="!loginForm.valid" class="btn btn-primary mt-3">Login</button>
+                    </form>
+                    <a style="color: #fff; margin-top: 10px;" routerLink="/signup">Tidak punya akun? Klik untuk
+                        buat!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
